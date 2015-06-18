@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <rosparam command="load" file="$(find blinky_control)/config/control.yaml" />
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+    args="blinky_joint_publisher blinky_drive_controller --shutdown-timeout 1" output="screen" />
+</launch>

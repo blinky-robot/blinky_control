@@ -1,0 +1,10 @@
+blinky_joint_publisher:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
+
+blinky_drive_controller:
+  type: "ackermann_controller/AckermannController"
+  publish_rate: 50
+
+  drive_joint_name: wheels
+  steering_joint_name: steering_angle
